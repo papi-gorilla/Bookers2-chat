@@ -1,0 +1,11 @@
+<table>
+    <tbody>
+        <% chat.each do |chat| %>
+        <tr>
+            <% if chat.user_id == current_user.id %>
+                <p><%= chat.message %></p>
+            <% end %>
+        </tr>
+        <% end %>
+    </tbody>
+</table>
